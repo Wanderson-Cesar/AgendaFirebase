@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdicionarUserActivity">
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        app:icon="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/edNome"
+        app:layout_constraintTop_toBottomOf="@+id/edNome" />
+
+    <EditText
+        android:id="@+id/edTelefone"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/edEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+    <EditText
+        android:id="@+id/edEndereco"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="@+id/edTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/edTelefone" />
+
+    <EditText
+        android:id="@+id/edOccupation"
+        android:layout_width="328dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Occupation"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/edEndereco"
+        app:layout_constraintTop_toBottomOf="@+id/edEndereco" />
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
